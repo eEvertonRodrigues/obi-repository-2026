@@ -10,7 +10,9 @@ Nesta aula, você vai entender como Python armazena e gerencia valores durante a
 Na aula anterior, você aprendeu a utilizar <code>input()</code> para receber dados e <code>print()</code> para exibir resultados. Com isso, já é possível construir a estrutura básica de um programa:
 <br>
 <br>
+<div align="left">
 <pre><code>Entrada → Processamento → Saída</code></pre>
+</div>
 <br>
 <br>
 Para que o processamento seja possível, precisamos de um mecanismo para <strong>armazenar informações</strong> durante a execução do programa — valores que possam ser lidos, transformados e utilizados em diferentes momentos. É aqui que entram as <strong>variáveis</strong>.
@@ -22,8 +24,10 @@ Para que o processamento seja possível, precisamos de um mecanismo para <strong
 De maneira intuitiva, uma variável é um <strong>nome que utilizamos para acessar um valor</strong> durante a execução do programa. Sempre que precisarmos daquele valor, basta utilizar o nome.
 <br>
 <br>
+<div align="left">
 <pre><code>nome = "João"
 idade = 20</code></pre>
+</div>
 <br>
 <br>
 Os valores <code>"João"</code> e <code>20</code> escritos diretamente no código são chamados de <strong>literais</strong>. Um literal é simplesmente um valor que aparece explicitamente no programa — como <code>3.14</code>, <code>"Python"</code>, <code>True</code> ou <code>0</code>. Quando atribuímos um literal a uma variável, estamos associando aquele valor a um nome que poderemos utilizar posteriormente.
@@ -32,16 +36,20 @@ Os valores <code>"João"</code> e <code>20</code> escritos diretamente no códig
 Depois de armazenado, o valor pode ser utilizado várias vezes:
 <br>
 <br>
+<div align="left">
 <pre><code>idade = 20
 print(idade)
 print(idade + 1)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>20
 21</code></pre>
+</div>
 <br>
 <br>
 <h3>Atribuição</h3>
@@ -51,15 +59,19 @@ O símbolo <code>=</code> em Python representa uma <strong>atribuição</strong>
 Uma nova atribuição substitui o valor anteriormente associado ao nome:
 <br>
 <br>
+<div align="left">
 <pre><code>idade = 20
 idade = 21
 print(idade)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>21</code></pre>
+</div>
 <br>
 <br>
 O valor final é <code>21</code> porque a segunda atribuição fez com que o nome <code>idade</code> passasse a representar o novo valor.
@@ -69,8 +81,10 @@ O valor final é <code>21</code> porque a segunda atribuição fez com que o nom
 Uma confusão muito comum para quem está começando é entre <code>=</code> e <code>==</code>. São operadores completamente diferentes:
 <br>
 <br>
+<div align="left">
 <pre><code>x = 10      # atribuição: associa o valor 10 ao nome x
 x == 10     # comparação: verifica se x possui o valor 10</code></pre>
+</div>
 <br>
 <br>
 O primeiro é uma <strong>atribuição</strong> — ele altera o estado do programa. O segundo é uma <strong>expressão de comparação</strong> — ele produz <code>True</code> ou <code>False</code> como resultado, sem alterar nada. Estudaremos <code>==</code> com mais profundidade quando abordarmos operadores e estruturas condicionais.
@@ -84,14 +98,18 @@ Em Python, os valores possuem tipos e o tipo de cada valor é determinado durant
 Podemos verificar o tipo de um valor utilizando a função <code>type()</code>:
 <br>
 <br>
+<div align="left">
 <pre><code>idade = 20
 print(type(idade))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>&lt;class 'int'&gt;</code></pre>
+</div>
 <br>
 <br>
 O nome <code>idade</code> está associado ao valor <code>20</code>, que é um número inteiro. Por isso, seu tipo é <code>int</code>.
@@ -100,26 +118,32 @@ O nome <code>idade</code> está associado ao valor <code>20</code>, que é um n�
 Uma característica importante da tipagem dinâmica é que o mesmo nome pode passar a estar associado a um valor de outro tipo:
 <br>
 <br>
+<div align="left">
 <pre><code>valor = 10
 print(type(valor))
 
 valor = "Olá"
 print(type(valor))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>&lt;class 'int'&gt;
 &lt;class 'str'&gt;</code></pre>
+</div>
 <br>
 <br>
 É comum dizer que <em>"a variável mudou de tipo"</em>, mas uma forma mais precisa de pensar é que <strong>o nome passou a estar associado a um valor de outro tipo</strong>. Em Python, não precisamos declarar que <code>valor</code> será sempre um inteiro ou sempre uma string.
 <br>
 <br>
+<div align="left">
 <pre><code>x = 10
 x = "dez"
 x = 3.14</code></pre>
+</div>
 <br>
 <br>
 O mesmo nome pode ser reutilizado para valores de tipos diferentes ao longo da execução.
@@ -130,10 +154,12 @@ O mesmo nome pode ser reutilizado para valores de tipos diferentes ao longo da e
 Ao longo do curso, trabalharemos principalmente com quatro tipos de dados:
 <br>
 <br>
+<div align="left">
 <pre><code>idade = 20        # int
 altura = 1.75     # float
 nome = "João"     # str
 aprovado = True   # bool</code></pre>
+</div>
 <br>
 <br>
 <strong>int</strong> — representa números inteiros, como <code>10</code>, <code>0</code> e <code>-5</code>. Não possui parte decimal.
@@ -151,19 +177,23 @@ aprovado = True   # bool</code></pre>
 Um detalhe que pode causar confusão: <code>True</code> e <code>"True"</code> são coisas completamente diferentes.
 <br>
 <br>
+<div align="left">
 <pre><code>print(True)
 print("True")
 print(type(True))
 print(type("True"))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>True
 True
 &lt;class 'bool'&gt;
 &lt;class 'str'&gt;</code></pre>
+</div>
 <br>
 <br>
 Embora a aparência na tela seja parecida, <code>True</code> é um valor booleano (<code>bool</code>), enquanto <code>"True"</code> é um texto (<code>str</code>). A aparência do conteúdo não determina o tipo do valor.
@@ -172,19 +202,23 @@ Embora a aparência na tela seja parecida, <code>True</code> é um valor boolean
 Podemos utilizar <code>type()</code> para inspecionar o tipo de qualquer valor:
 <br>
 <br>
+<div align="left">
 <pre><code>print(type(idade))
 print(type(altura))
 print(type(nome))
 print(type(aprovado))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>&lt;class 'int'&gt;
 &lt;class 'float'&gt;
 &lt;class 'str'&gt;
 &lt;class 'bool'&gt;</code></pre>
+</div>
 <br>
 <br>
 <div style="border-left: 4px solid #FFD43B; background-color: #FFF8DC; padding: 12px 16px; margin: 15px 0; border-radius: 4px;">
@@ -195,14 +229,18 @@ Saída:
 Além dos quatro tipos principais, existe um valor especial em Python chamado <code>None</code>. Ele representa a <strong>ausência de um valor</strong> — a ideia de que, naquele momento, não existe um valor disponível para determinada variável.
 <br>
 <br>
+<div align="left">
 <pre><code>resultado = None
 print(type(resultado))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>&lt;class 'NoneType'&gt;</code></pre>
+</div>
 <br>
 <br>
 Você encontrará <code>None</code> em diversas situações ao longo do curso. Por ora, basta saber que ele existe e que representa "nenhum valor".
@@ -216,25 +254,33 @@ Um dos conceitos mais importantes desta aula é que <strong>o tipo de um valor i
 Observe:
 <br>
 <br>
+<div align="left">
 <pre><code>print(22 + 11)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>33</code></pre>
+</div>
 <br>
 <br>
 Agora com strings:
 <br>
 <br>
+<div align="left">
 <pre><code>print("22" + "11")</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>2211</code></pre>
+</div>
 <br>
 <br>
 No primeiro caso, <code>22</code> e <code>11</code> são inteiros e o operador <code>+</code> realiza uma <strong>soma numérica</strong>. No segundo, <code>"22"</code> e <code>"11"</code> são strings e o operador <code>+</code> realiza uma <strong>concatenação</strong>, juntando os dois textos.
@@ -247,13 +293,17 @@ O mesmo operador se comporta de maneiras completamente diferentes dependendo dos
 O que acontece quando tentamos usar tipos incompatíveis na mesma operação?
 <br>
 <br>
+<div align="left">
 <pre><code>print("22" + 11)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>TypeError: can only concatenate str (not "int") to str</code></pre>
+</div>
 <br>
 <br>
 Python não sabe o que fazer: <code>"22"</code> é uma string e <code>11</code> é um inteiro. A operação <code>+</code> não está definida para essa combinação de tipos, e o programa encerra com um erro.
@@ -266,44 +316,58 @@ O tipo não é apenas uma informação descritiva sobre o valor. Ele determina q
 A solução depende da <em>intenção</em> do programador. Se quiser realizar uma <strong>soma numérica</strong>:
 <br>
 <br>
+<div align="left">
 <pre><code>print(int("22") + 11)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>33</code></pre>
+</div>
 <br>
 <br>
 Se quiser <strong>juntar os valores como texto</strong>:
 <br>
 <br>
+<div align="left">
 <pre><code>print("22" + str(11))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>2211</code></pre>
+</div>
 <br>
 <br>
 <h3>Nem toda operação entre tipos diferentes é inválida</h3>
 É importante não generalizar. Algumas operações entre tipos diferentes são perfeitamente válidas em Python:
 <br>
 <br>
+<div align="left">
 <pre><code>print("Python" * 3)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>PythonPythonPython</code></pre>
+</div>
 <br>
 <br>
 Multiplicar uma string por um inteiro é uma operação definida em Python: ela repete o texto pelo número de vezes indicado. Já:
 <br>
 <br>
+<div align="left">
 <pre><code>print("Python" - 3)</code></pre>
+</div>
 <br>
 <br>
 provocará um <code>TypeError</code>, pois a subtração entre uma string e um inteiro não está definida.
@@ -317,21 +381,27 @@ Python possui regras específicas para cada operador e para cada combinação de
 Quando a conversão é possível e necessária, Python oferece funções para converter valores entre tipos:
 <br>
 <br>
+<div align="left">
 <pre><code>print(int("22"))      # 22
 print(float("3.14"))  # 3.14
 print(str(22))        # "22"</code></pre>
+</div>
 <br>
 <br>
 Algumas conversões, porém, podem causar erros:
 <br>
 <br>
+<div align="left">
 <pre><code>int("abc")</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>ValueError: invalid literal for int() with base 10: 'abc'</code></pre>
+</div>
 <br>
 <br>
 O texto <code>"abc"</code> não representa um número inteiro válido, e por isso a conversão falha.
@@ -340,13 +410,17 @@ O texto <code>"abc"</code> não representa um número inteiro válido, e por iss
 Outra conversão importante de entender:
 <br>
 <br>
+<div align="left">
 <pre><code>print(int(3.9))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>3</code></pre>
+</div>
 <br>
 <br>
 <code>int()</code> <strong>não arredonda</strong> o número — ele descarta a parte decimal. O resultado de <code>int(3.9)</code> é <code>3</code>, e não <code>4</code>.
@@ -356,33 +430,43 @@ Saída:
 Retomando o que foi visto na <a href="../00%20-%20Introdução%20a%20Python/Introdução%20a%20Python.md">Aula 00</a>: <code>input()</code> <strong>sempre</strong> retorna uma string, independentemente do que o usuário digitou.
 <br>
 <br>
+<div align="left">
 <pre><code>idade = input()</code></pre>
+</div>
 <br>
 <br>
 Se o usuário digitar <code>22</code>, o valor recebido será a string <code>"22"</code>, e não o inteiro <code>22</code>. Isso causa problemas quando tentamos utilizá-lo em operações numéricas:
 <br>
 <br>
+<div align="left">
 <pre><code>idade = input()
 print(idade + 10)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>TypeError: can only concatenate str (not "int") to str</code></pre>
+</div>
 <br>
 <br>
 A forma correta é converter o valor antes de utilizá-lo:
 <br>
 <br>
+<div align="left">
 <pre><code>idade = int(input())
 print(idade + 10)</code></pre>
+</div>
 <br>
 <br>
 O fluxo pode ser visualizado assim:
 <br>
 <br>
+<div align="left">
 <pre><code>input() → str → int() → int → operação</code></pre>
+</div>
 <br>
 <br>
 Esse padrão aparecerá constantemente em programação competitiva. Sempre que receber um número pela entrada, converta-o para o tipo adequado antes de utilizá-lo em cálculos.
@@ -393,10 +477,12 @@ Esse padrão aparecerá constantemente em programação competitiva. Sempre que 
 Python possui tipagem dinâmica e não exige que o programador declare o tipo das variáveis. Porém, a linguagem permite que você <em>indique</em> qual tipo de valor espera que uma variável contenha, por meio das chamadas <strong>anotações de tipo</strong> (ou <em>type hints</em>):
 <br>
 <br>
+<div align="left">
 <pre><code>idade: int = 20
 nome: str = "João"
 altura: float = 1.75
 aprovado: bool = True</code></pre>
+</div>
 <br>
 <br>
 As partes <code>: int</code>, <code>: str</code>, <code>: float</code> e <code>: bool</code> são as anotações. Elas servem principalmente para <strong>documentar a intenção do programador</strong> e permitir que editores e ferramentas de análise possam identificar possíveis incompatibilidades.
@@ -405,8 +491,10 @@ As partes <code>: int</code>, <code>: str</code>, <code>: float</code> e <code>:
 Importante: a anotação <strong>não transforma Python em uma linguagem estaticamente tipada</strong>. O código abaixo ainda pode ser executado:
 <br>
 <br>
+<div align="left">
 <pre><code>idade: int = 20
 idade = "vinte"</code></pre>
+</div>
 <br>
 <br>
 Python não impedirá a atribuição de uma string a <code>idade</code>, mesmo com a anotação indicando que esperávamos um <code>int</code>. A anotação funciona como uma <em>indicação</em> do tipo esperado — ferramentas de análise podem alertar sobre a incompatibilidade, mas o interpretador não gera um erro por conta disso.
@@ -416,12 +504,16 @@ Python não impedirá a atribuição de uma string a <code>idade</code>, mesmo c
 Em programação competitiva, é muito comum optar pela forma mais enxuta:
 <br>
 <br>
+<div align="left">
 <pre><code>n = int(input())</code></pre>
+</div>
 <br>
 em vez de:
 <br>
 <br>
+<div align="left">
 <pre><code>n: int = int(input())</code></pre>
+</div>
 <br>
 Ambas são válidas. A primeira é preferida quando queremos escrever soluções rapidamente durante uma competição.
 </div>
@@ -431,9 +523,11 @@ Ambas são válidas. A primeira é preferida quando queremos escrever soluções
 Python não possui constantes verdadeiras — não existe um mecanismo que impeça que uma variável tenha seu valor alterado. Porém, existe uma <strong>convenção</strong> amplamente utilizada: valores que pretendemos tratar como constantes recebem nomes escritos em <strong>letras maiúsculas</strong>.
 <br>
 <br>
+<div align="left">
 <pre><code>PI = 3.14159
 LIMITE = 100000
 MOD = 1000000007</code></pre>
+</div>
 <br>
 <br>
 Escrever os nomes dessa maneira comunica ao programador que esses valores <strong>não deveriam ser alterados</strong> durante a execução. Em programação competitiva, valores como <code>MOD</code> aparecem com muita frequência.
@@ -442,8 +536,10 @@ Escrever os nomes dessa maneira comunica ao programador que esses valores <stron
 Porém, é importante entender que isso é apenas uma convenção. Python ainda permite:
 <br>
 <br>
+<div align="left">
 <pre><code>PI = 3.14
 PI = 4   # Python não impede essa reatribuição</code></pre>
+</div>
 <br>
 <br>
 Nenhum erro será gerado. A responsabilidade de respeitar a convenção é do programador.
@@ -454,15 +550,19 @@ Nenhum erro será gerado. A responsabilidade de respeitar a convenção é do pr
 Uma variável pode receber um novo valor que depende do seu valor atual:
 <br>
 <br>
+<div align="left">
 <pre><code>x = 10
 x = x + 5
 print(x)</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>15</code></pre>
+</div>
 <br>
 <br>
 O Python primeiro calcula o lado direito da atribuição (<code>x + 5</code> = <code>15</code>) e depois associa esse resultado novamente ao nome <code>x</code>.
@@ -471,10 +571,12 @@ O Python primeiro calcula o lado direito da atribuição (<code>x + 5</code> = <
 Python oferece também <strong>operadores de atribuição</strong> que combinam uma operação com a atribuição:
 <br>
 <br>
+<div align="left">
 <pre><code>x += 5   # equivale a x = x + 5
 x -= 2   # equivale a x = x - 2
 x *= 3   # equivale a x = x * 3
 x /= 2   # equivale a x = x / 2</code></pre>
+</div>
 <br>
 <br>
 Esses operadores são especialmente úteis quando precisamos acumular valores ou aplicar transformações repetidas a uma variável. Você os encontrará com frequência ao longo do curso.
@@ -488,35 +590,45 @@ Python possui diversas funções, tipos e outros nomes que já fazem parte do am
 Considere a função <code>sum()</code>, que soma os valores de uma coleção numérica:
 <br>
 <br>
+<div align="left">
 <pre><code>print(sum([1, 2, 3]))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>6</code></pre>
+</div>
 <br>
 <br>
 Agora observe o que acontece se utilizarmos <code>sum</code> como nome de variável:
 <br>
 <br>
+<div align="left">
 <pre><code>sum = 10
 print(sum([1, 2, 3]))</code></pre>
+</div>
 <br>
 <br>
 Saída:
 <br>
 <br>
+<div align="left">
 <pre><code>TypeError: 'int' object is not callable</code></pre>
+</div>
 <br>
 <br>
 Depois da atribuição, o nome <code>sum</code> passou a representar o número <code>10</code>, e não mais a função. Podemos visualizar assim:
 <br>
 <br>
+<div align="left">
 <pre><code># Antes da atribuição:
 sum → função sum()
 # Depois:
 sum → 10</code></pre>
+</div>
 <br>
 <br>
 Quando escrevemos <code>sum([1, 2, 3])</code>, o Python tenta <em>chamar</em> o objeto associado ao nome <code>sum</code>. Como agora <code>sum</code> representa um inteiro, e inteiros não podem ser chamados como funções, ocorre o erro.
@@ -525,8 +637,10 @@ Quando escrevemos <code>sum([1, 2, 3])</code>, o Python tenta <em>chamar</em> o 
 O mesmo problema pode acontecer com outros nomes importantes:
 <br>
 <br>
+<div align="left">
 <pre><code>list = [1, 2, 3]
 # Agora list() como função pode não funcionar mais</code></pre>
+</div>
 <br>
 <br>
 <div style="border-left: 4px solid #FFD43B; background-color: #FFF8DC; padding: 12px 16px; margin: 15px 0; border-radius: 4px;">
@@ -549,17 +663,21 @@ Nomes de variáveis em Python seguem algumas regras básicas:
 — Por convenção, nomes em <strong>letras maiúsculas</strong> (como <code>MOD</code>, <code>PI</code>, <code>LIMITE</code>) indicam constantes.
 <br>
 <br>
+<div align="left">
 <pre><code>idade = 20
 Idade = 30
 print(idade)   # 20
 print(Idade)   # 30</code></pre>
+</div>
 <br>
 <br>
 Nomes descritivos facilitam a leitura e manutenção do código:
 <br>
 <br>
+<div align="left">
 <pre><code>nome_completo = "João Silva"
 quantidade_de_alunos = 30</code></pre>
+</div>
 <br>
 <br>
 <div style="border-left: 4px solid #FFD43B; background-color: #FFF8DC; padding: 12px 16px; margin: 15px 0; border-radius: 4px;">
@@ -574,9 +692,11 @@ Vamos ver como todos esses conceitos se manifestam em um problema simples de pro
 Suponha que a entrada forneça dois números inteiros em uma mesma linha e o programa deva imprimir a soma entre eles:
 <br>
 <br>
+<div align="left">
 <pre><code>a, b = map(int, input().split())
 soma = a + b
 print(soma)</code></pre>
+</div>
 <br>
 <br>
 Cada parte desse código envolve os conceitos desta aula:
@@ -598,7 +718,9 @@ Cada parte desse código envolve os conceitos desta aula:
 O fluxo completo pode ser visualizado assim:
 <br>
 <br>
+<div align="left">
 <pre><code>Entrada → armazenamento em variáveis → processamento → saída</code></pre>
+</div>
 <br>
 <br>
 <div style="border-left: 4px solid #FFD43B; background-color: #FFF8DC; padding: 12px 16px; margin: 15px 0; border-radius: 4px;">

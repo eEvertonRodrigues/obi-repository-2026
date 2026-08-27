@@ -146,13 +146,17 @@
         Vamos começar com o exemplo clássico de qualquer curso de programação:
         <br>
         <br>
-        <pre><code>print("Olá, Mundo!")</code></pre>
+        <div align="left">
+<pre><code>print("Olá, Mundo!")</code></pre>
+</div>
         <br>
         <br>
         Ao executar esse código, teremos como saída:
         <br>
         <br>
-        <pre><code>Olá, Mundo!</code></pre>
+        <div align="left">
+<pre><code>Olá, Mundo!</code></pre>
+</div>
         <br>
         <br>
         Embora esse exemplo seja extremamente simples, a função <code>print()</code> será utilizada constantemente durante nossos estudos. Em programação competitiva, ela é especialmente importante porque é por meio dela que apresentamos a resposta produzida pelo nosso programa.
@@ -167,22 +171,30 @@
         Por exemplo, suponha que um problema peça para imprimir apenas o número <code>42</code>. O código:
         <br>
         <br>
-        <pre><code>print(42)</code></pre>
+        <div align="left">
+<pre><code>print(42)</code></pre>
+</div>
         <br>
         produz exatamente a saída esperada:
         <br>
         <br>
-        <pre><code>42</code></pre>
+        <div align="left">
+<pre><code>42</code></pre>
+</div>
         <br>
         Por outro lado, adicionar uma mensagem que não foi solicitada:
         <br>
         <br>
-        <pre><code>print("A resposta é:", 42)</code></pre>
+        <div align="left">
+<pre><code>print("A resposta é:", 42)</code></pre>
+</div>
         <br>
         produzirá:
         <br>
         <br>
-        <pre><code>A resposta é: 42</code></pre>
+        <div align="left">
+<pre><code>A resposta é: 42</code></pre>
+</div>
         <br>
         Apesar de uma pessoa conseguir entender facilmente que a resposta é <code>42</code>, essa saída pode ser considerada <strong>incorreta</strong> pelo sistema de correção, pois não corresponde ao formato especificado no problema.
         <br>
@@ -205,34 +217,46 @@
         Podemos passar vários valores para a função <code>print()</code> separados por vírgulas. Quando fazemos isso, o Python coloca um espaço em branco entre cada valor por padrão:
         <br>
         <br>
-        <pre><code>print("Python", "é", "legal")</code></pre>
+        <div align="left">
+<pre><code>print("Python", "é", "legal")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Python é legal</code></pre>
+        <div align="left">
+<pre><code>Python é legal</code></pre>
+</div>
         <br>
         <br>
         Podemos alterar esse comportamento utilizando o parâmetro <code>sep</code>, abreviação de <em>separator</em>. Ele define o que será colocado entre os valores:
         <br>
         <br>
-        <pre><code>print("2026", "08", "27", sep="-")</code></pre>
+        <div align="left">
+<pre><code>print("2026", "08", "27", sep="-")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>2026-08-27</code></pre>
+        <div align="left">
+<pre><code>2026-08-27</code></pre>
+</div>
         <br>
         <br>
         O separador pode ser qualquer texto que faça sentido para a saída que queremos produzir:
         <br>
         <br>
-        <pre><code>print("Python", "é", "legal", sep=" | ")</code></pre>
+        <div align="left">
+<pre><code>print("Python", "é", "legal", sep=" | ")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Python | é | legal</code></pre>
+        <div align="left">
+<pre><code>Python | é | legal</code></pre>
+</div>
         <br>
         <br>
         <strong>2. Concatenação de strings</strong>
@@ -241,25 +265,33 @@
         Outra maneira de juntar textos é utilizando o operador de adição (<code>+</code>). Esse processo é chamado de <strong>concatenação</strong>.
         <br>
         <br>
-        <pre><code>print("Olá, " + "mundo!")</code></pre>
+        <div align="left">
+<pre><code>print("Olá, " + "mundo!")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Olá, mundo!</code></pre>
+        <div align="left">
+<pre><code>Olá, mundo!</code></pre>
+</div>
         <br>
         <br>
         Diferentemente de passar vários valores separados por vírgulas, a concatenação não adiciona espaços automaticamente. O espaço precisa fazer parte de uma das strings:
         <br>
         <br>
-        <pre><code>print("Olá" + "mundo")
+        <div align="left">
+<pre><code>print("Olá" + "mundo")
 print("Olá" + " " + "mundo")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Olámundo
+        <div align="left">
+<pre><code>Olámundo
 Olá mundo</code></pre>
+</div>
         <br>
         <br>
         Essa diferença é importante: quando utilizamos vírgulas, estamos passando <strong>vários valores</strong> para <code>print()</code>. Quando utilizamos <code>+</code>, estamos <strong>juntando strings</strong> antes de exibi-las.
@@ -271,26 +303,34 @@ Olá mundo</code></pre>
         Por padrão, cada chamada de <code>print()</code> termina com uma quebra de linha. É por isso que duas chamadas consecutivas aparecem em linhas diferentes:
         <br>
         <br>
-        <pre><code>print("Primeira linha")
+        <div align="left">
+<pre><code>print("Primeira linha")
 print("Segunda linha")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Primeira linha
+        <div align="left">
+<pre><code>Primeira linha
 Segunda linha</code></pre>
+</div>
         <br>
         <br>
         Podemos alterar o que será colocado ao final da saída utilizando o parâmetro <code>end</code>:
         <br>
         <br>
-        <pre><code>print("Primeira linha", end=" ")
+        <div align="left">
+<pre><code>print("Primeira linha", end=" ")
 print("Segunda linha")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Primeira linha Segunda linha</code></pre>
+        <div align="left">
+<pre><code>Primeira linha Segunda linha</code></pre>
+</div>
         <br>
         <br>
         Enquanto <code>sep</code> controla o que aparece <strong>entre os valores</strong> de uma mesma chamada de <code>print()</code>, <code>end</code> controla o que aparece <strong>ao final da chamada</strong>.
@@ -302,26 +342,34 @@ print("Segunda linha")</code></pre>
         Também podemos utilizar caracteres especiais dentro das strings para controlar a formatação do texto. Um dos mais importantes é <code>\n</code>, que representa uma quebra de linha:
         <br>
         <br>
-        <pre><code>print("Primeira linha\nSegunda linha")</code></pre>
+        <div align="left">
+<pre><code>print("Primeira linha\nSegunda linha")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Primeira linha
+        <div align="left">
+<pre><code>Primeira linha
 Segunda linha</code></pre>
+</div>
         <br>
         <br>
         Outro caractere bastante utilizado é <code>\t</code>, que representa uma tabulação:
         <br>
         <br>
-        <pre><code>print("Nome:\tJoão")
+        <div align="left">
+<pre><code>print("Nome:\tJoão")
 print("Idade:\t25")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Nome:	 João
+        <div align="left">
+<pre><code>Nome:	 João
 Idade:	 25</code></pre>
+</div>
         <br>
         <br>
         Esses caracteres são especialmente úteis quando precisamos produzir uma saída com uma formatação específica.
@@ -336,26 +384,34 @@ Idade:	 25</code></pre>
         Para isso, uma das formas mais práticas em Python é utilizar as chamadas <strong>f-strings</strong>. Basta colocar a letra <code>f</code> antes das aspas e escrever os valores ou expressões dentro de chaves (<code>{}</code>):
         <br>
         <br>
-        <pre><code>print(f"O resultado é {40 + 2}")</code></pre>
+        <div align="left">
+<pre><code>print(f"O resultado é {40 + 2}")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>O resultado é 42</code></pre>
+        <div align="left">
+<pre><code>O resultado é 42</code></pre>
+</div>
         <br>
         <br>
         O verdadeiro potencial das f-strings aparece quando queremos inserir valores armazenados em variáveis:
         <br>
         <br>
-        <pre><code>nome = "João"
+        <div align="left">
+<pre><code>nome = "João"
 idade = 25
 
 print(f"Meu nome é {nome} e tenho {idade} anos.")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Meu nome é João e tenho 25 anos.</code></pre>
+        <div align="left">
+<pre><code>Meu nome é João e tenho 25 anos.</code></pre>
+</div>
         <br>
         <br>
         Veremos o funcionamento das variáveis com mais detalhes na próxima aula. Por enquanto, basta entender que as f-strings permitem misturar <strong>texto e valores</strong> de maneira simples e legível.
@@ -367,14 +423,18 @@ print(f"Meu nome é {nome} e tenho {idade} anos.")</code></pre>
         Python também permite utilizar diretamente caracteres de diferentes idiomas, acentos e diversos símbolos dentro das strings:
         <br>
         <br>
-        <pre><code>print("Água, pão e maçã")
+        <div align="left">
+<pre><code>print("Água, pão e maçã")
 print("Símbolos: ★ 🧮")</code></pre>
+</div>
         <br>
         Saída:
         <br>
         <br>
-        <pre><code>Água, pão e maçã
+        <div align="left">
+<pre><code>Água, pão e maçã
 Símbolos: ★ 🧮</code></pre>
+</div>
         <br>
         Isso é possível graças ao suporte a <strong>Unicode</strong>, que permite representar uma grande variedade de caracteres e símbolos em textos.
         <br>
@@ -391,7 +451,9 @@ Símbolos: ★ 🧮</code></pre>
         Podemos visualizar o funcionamento básico de um programa como:
         <br>
         <br>
-        <pre><code>Entrada → Processamento → Saída</code></pre>
+        <div align="left">
+<pre><code>Entrada → Processamento → Saída</code></pre>
+</div>
         <br>
         <br>
         Já conhecemos a última etapa desse processo. Agora vamos aprender como obter os dados da entrada e utilizá-los durante a execução do nosso programa.
@@ -400,8 +462,10 @@ Símbolos: ★ 🧮</code></pre>
         Em Python, a principal função para ler dados da entrada padrão é a <code>input()</code>. O seu funcionamento mais básico é:
         <br>
         <br>
-        <pre><code>entrada = input()
+        <div align="left">
+<pre><code>entrada = input()
 print(entrada)</code></pre>
+</div>
         <br>
         <br>
         Ao encontrar <code>input()</code>, o programa lê uma linha completa da entrada padrão e armazena o valor recebido em uma <strong>variável</strong> chamada <code>entrada</code> <a href="../01%20-%20Vari%C3%A1veis%20e%20Tipos/Vari%C3%A1veis%20e%20Tipos.md" title="Aula 01 — Variáveis e Tipos">📖</a>. Em seguida, o <code>print()</code> exibe esse valor na saída.
@@ -419,19 +483,25 @@ print(entrada)</code></pre>
         Por exemplo, se a entrada for:
         <br>
         <br>
-        <pre><code>25</code></pre>
+        <div align="left">
+<pre><code>25</code></pre>
+</div>
         <br>
         e executarmos:
         <br>
         <br>
-        <pre><code>idade = input()
+        <div align="left">
+<pre><code>idade = input()
 print(type(idade))</code></pre>
+</div>
         <br>
         <br>
         teremos como saída:
         <br>
         <br>
-        <pre><code>&lt;class 'str'&gt;</code></pre>
+        <div align="left">
+<pre><code>&lt;class 'str'&gt;</code></pre>
+</div>
         <br>
         <br>
         Ou seja, o valor armazenado em <code>idade</code> é o texto <code>"25"</code>, e <strong>não</strong> o número inteiro <code>25</code>. Veremos a diferença entre <strong>tipos de dados</strong> com muito mais profundidade na <a href="../01%20-%20Vari%C3%A1veis%20e%20Tipos/Vari%C3%A1veis%20e%20Tipos.md">Aula 01 — Variáveis e Tipos</a>.
@@ -440,23 +510,29 @@ print(type(idade))</code></pre>
         Essa diferença é importante porque strings e números possuem comportamentos distintos. Observe o que acontece quando tentamos "somar" dois valores lidos com <code>input()</code>:
         <br>
         <br>
-        <pre><code>a = input()
+        <div align="left">
+<pre><code>a = input()
 b = input()
 
 print(a + b)</code></pre>
+</div>
         <br>
         <br>
         Se a entrada for:
         <br>
         <br>
-        <pre><code>10
+        <div align="left">
+<pre><code>10
 20</code></pre>
+</div>
         <br>
         <br>
         a saída será:
         <br>
         <br>
-        <pre><code>1020</code></pre>
+        <div align="left">
+<pre><code>1020</code></pre>
+</div>
         <br>
         <br>
         Isso acontece porque <code>a</code> e <code>b</code> são strings, e o operador <code>+</code> sobre strings realiza uma <strong>concatenação</strong> de textos — e não uma soma matemática. Para realizar operações numéricas, precisamos converter os valores.
@@ -475,45 +551,59 @@ print(a + b)</code></pre>
         Para <strong>números inteiros</strong>, utilizamos a função <code>int()</code>:
         <br>
         <br>
-        <pre><code>idade = int(input())
+        <div align="left">
+<pre><code>idade = int(input())
 print(idade + 1)</code></pre>
+</div>
         <br>
         <br>
         Se a entrada for:
         <br>
         <br>
-        <pre><code>25</code></pre>
+        <div align="left">
+<pre><code>25</code></pre>
+</div>
         <br>
         <br>
         a saída será:
         <br>
         <br>
-        <pre><code>26</code></pre>
+        <div align="left">
+<pre><code>26</code></pre>
+</div>
         <br>
         <br>
         Nesse caso, <code>input()</code> primeiro lê o valor como string e, em seguida, <code>int()</code> converte essa string para um número inteiro. Podemos visualizar o processo da seguinte maneira:
         <br>
         <br>
-        <pre><code>input() → "25" → int() → 25</code></pre>
+        <div align="left">
+<pre><code>input() → "25" → int() → 25</code></pre>
+</div>
         <br>
         <br>
         Para <strong>números com parte decimal</strong>, utilizamos a função <code>float()</code>:
         <br>
         <br>
-        <pre><code>altura = float(input())
+        <div align="left">
+<pre><code>altura = float(input())
 print(altura * 2)</code></pre>
+</div>
         <br>
         <br>
         Se a entrada for:
         <br>
         <br>
-        <pre><code>1.75</code></pre>
+        <div align="left">
+<pre><code>1.75</code></pre>
+</div>
         <br>
         <br>
         a saída será:
         <br>
         <br>
-        <pre><code>3.5</code></pre>
+        <div align="left">
+<pre><code>3.5</code></pre>
+</div>
         <br>
         <br>
         A conversão adequada depende sempre do <a href="../01%20-%20Vari%C3%A1veis%20e%20Tipos/Vari%C3%A1veis%20e%20Tipos.md">tipo de dado</a> que o problema fornece e do que precisamos fazer com ele durante o processamento.
@@ -525,52 +615,68 @@ print(altura * 2)</code></pre>
         É muito comum que um problema forneça vários valores em uma mesma linha. Por exemplo:
         <br>
         <br>
-        <pre><code>10 20</code></pre>
+        <div align="left">
+<pre><code>10 20</code></pre>
+</div>
         <br>
         <br>
         Nesse caso, uma única chamada de <code>input()</code> lê a linha inteira como uma string. A variável <code>entrada</code> conterá o texto <code>"10 20"</code>:
         <br>
         <br>
-        <pre><code>entrada = input()
+        <div align="left">
+<pre><code>entrada = input()
 print(entrada)</code></pre>
+</div>
         <br>
         <br>
         Para separar esses valores, podemos utilizar o método <code>split()</code>, que divide a string nos espaços em branco e retorna uma <strong>lista</strong> com cada pedaço <a href="../03%20-%20La%C3%A7os%20e%20Matrizes/La%C3%A7os%20e%20Matrizes.md" title="Aula 03 — Laços e Matrizes">📖</a>:
         <br>
         <br>
-        <pre><code>entrada = input().split()
+        <div align="left">
+<pre><code>entrada = input().split()
 print(entrada)</code></pre>
+</div>
         <br>
         <br>
         Com a entrada:
         <br>
         <br>
-        <pre><code>10 20</code></pre>
+        <div align="left">
+<pre><code>10 20</code></pre>
+</div>
         <br>
         <br>
         teremos:
         <br>
         <br>
-        <pre><code>['10', '20']</code></pre>
+        <div align="left">
+<pre><code>['10', '20']</code></pre>
+</div>
         <br>
         <br>
         Observe que os valores resultantes ainda são strings. Quando precisamos utilizá-los como números, podemos combinar o <code>split()</code> com a função <code>map()</code> <a href="../03%20-%20La%C3%A7os%20e%20Matrizes/La%C3%A7os%20e%20Matrizes.md" title="Aula 03 — Laços e Matrizes">📖</a>, que aplica uma conversão a cada elemento da lista:
         <br>
         <br>
-        <pre><code>a, b = map(int, input().split())
+        <div align="left">
+<pre><code>a, b = map(int, input().split())
 print(a + b)</code></pre>
+</div>
         <br>
         <br>
         Com a entrada:
         <br>
         <br>
-        <pre><code>10 20</code></pre>
+        <div align="left">
+<pre><code>10 20</code></pre>
+</div>
         <br>
         <br>
         teremos como saída:
         <br>
         <br>
-        <pre><code>30</code></pre>
+        <div align="left">
+<pre><code>30</code></pre>
+</div>
         <br>
         <br>
         Essa construção — <code>a, b = map(int, input().split())</code> — é extremamente comum em programação competitiva e permite ler vários números de uma mesma linha de forma direta e eficiente. Vale guardá-la na memória. O funcionamento detalhado de <code>map()</code> e funções de ordem superior será explorado na <a href="../03%20-%20La%C3%A7os%20e%20Matrizes/La%C3%A7os%20e%20Matrizes.md">Aula 03 — Laços e Matrizes</a>.
@@ -585,24 +691,30 @@ print(a + b)</code></pre>
         Se a entrada for:
         <br>
         <br>
-        <pre><code>15 27</code></pre>
+        <div align="left">
+<pre><code>15 27</code></pre>
+</div>
         <br>
         <br>
         podemos resolver o problema com:
         <br>
         <br>
-        <pre><code>a, b = map(int, input().split())
+        <div align="left">
+<pre><code>a, b = map(int, input().split())
 print(a + b)</code></pre>
+</div>
         <br>
         <br>
         A execução pode ser entendida em três etapas:
         <br>
         <br>
-        <pre><code>Entrada → 15 27
+        <div align="left">
+<pre><code>Entrada → 15 27
            ↓
 Processamento → 15 + 27
            ↓
 Saída → 42</code></pre>
+</div>
         <br>
         <br>
         Essa é a estrutura por trás de grande parte dos problemas de programação competitiva: <strong>ler os dados, processá-los e produzir exatamente a saída solicitada</strong>.
@@ -634,7 +746,9 @@ Saída → 42</code></pre>
         Podemos representar esse processo assim:
         <br>
         <br>
-        <pre><code>Código Python → Interpretador Python → Execução</code></pre>
+        <div align="left">
+<pre><code>Código Python → Interpretador Python → Execução</code></pre>
+</div>
         <br>
         <br>
         Essa é uma simplificação que nos ajuda a construir um modelo mental sobre o que acontece quando executamos um programa. O ponto importante é perceber que <strong>o código não é executado diretamente pela máquina</strong>: ele precisa ser processado pelo interpretador para que suas instruções sejam realizadas.
@@ -648,19 +762,23 @@ Saída → 42</code></pre>
         Esse conceito ficará muito mais claro quando estudarmos condicionais, laços de repetição e funções. Por ora, vamos observar um exemplo simples:
         <br>
         <br>
-        <pre><code>print("Início")
+        <div align="left">
+<pre><code>print("Início")
 
 if False:
     numero = 10 / 0
 
 print("Fim")</code></pre>
+</div>
         <br>
         <br>
         A saída desse programa é:
         <br>
         <br>
-        <pre><code>Início
+        <div align="left">
+<pre><code>Início
 Fim</code></pre>
+</div>
         <br>
         <br>
         Uma divisão por zero normalmente provocaria um erro durante a execução. Porém, a instrução <code>numero = 10 / 0</code> está dentro de um bloco que <strong>não foi executado</strong>, pois a condição era <code>False</code>. Como essa instrução nunca entrou no fluxo de execução, o erro associado a ela também não ocorreu.
@@ -669,12 +787,14 @@ Fim</code></pre>
         Agora observe o mesmo programa com a condição invertida:
         <br>
         <br>
-        <pre><code>print("Início")
+        <div align="left">
+<pre><code>print("Início")
 
 if True:
     numero = 10 / 0
 
 print("Fim")</code></pre>
+</div>
         <br>
         <br>
         Nesse caso, o bloco <strong>será executado</strong>, a divisão por zero ocorrerá e o programa encerrará com um erro. A instrução <code>print("Fim")</code> nunca chegará a ser executada.
@@ -687,8 +807,10 @@ print("Fim")</code></pre>
             <strong>Atenção — erros de sintaxe são diferentes.</strong> Mesmo que um trecho de código esteja dentro de um bloco que nunca seria executado, se ele contiver um erro de sintaxe, o programa não chegará a iniciar. Por exemplo:
             <br>
             <br>
-            <pre><code>if False:
+            <div align="left">
+<pre><code>if False:
     print("Olá"</code></pre>
+</div>
             <br>
             O parêntese não fechado é um erro de sintaxe. Independentemente da condição ser <code>False</code>, o Python precisa analisar a estrutura do código antes de executar qualquer coisa — e ao encontrar esse problema, interrompe tudo antes mesmo de começar.
         </div>
@@ -704,7 +826,9 @@ print("Fim")</code></pre>
         Acontecem quando o código não segue as regras da linguagem. O interpretador não consegue nem iniciar a execução. São os mais fáceis de identificar, pois o próprio Python indica onde o problema está.
         <br>
         <br>
-        <pre><code>print("Olá"   # parêntese não fechado</code></pre>
+        <div align="left">
+<pre><code>print("Olá"   # parêntese não fechado</code></pre>
+</div>
         <br>
         <br>
         <strong>2. Erros de execução</strong>
@@ -713,7 +837,9 @@ print("Fim")</code></pre>
         Acontecem enquanto o programa está sendo executado e encontra uma situação problemática. O código é sintaticamente válido, mas algo dá errado durante a execução — como tentar dividir um número por zero ou acessar um dado que não existe.
         <br>
         <br>
-        <pre><code>numero = 10 / 0   # ZeroDivisionError</code></pre>
+        <div align="left">
+<pre><code>numero = 10 / 0   # ZeroDivisionError</code></pre>
+</div>
         <br>
         <br>
         <strong>3. Erros lógicos</strong>
@@ -722,8 +848,10 @@ print("Fim")</code></pre>
         São os mais sutis e, em programação competitiva, os mais importantes de conhecer. O programa executa até o final sem apresentar nenhuma mensagem de erro — mas produz um resultado incorreto.
         <br>
         <br>
-        <pre><code>a, b = map(int, input().split())
+        <div align="left">
+<pre><code>a, b = map(int, input().split())
 print(a - b)   # deveria ser a + b</code></pre>
+</div>
         <br>
         <br>
         Para a entrada <code>10 20</code>, o programa exibirá <code>-10</code> em vez de <code>30</code>. Nenhum erro será sinalizado, mas a resposta está errada.
@@ -756,8 +884,10 @@ print(a - b)   # deveria ser a + b</code></pre>
         Você já teve contato com tipos ao converter valores com <code>int()</code> e <code>float()</code>. Python permite que uma variável receba valores de tipos diferentes durante a execução:
         <br>
         <br>
-        <pre><code>x = 10
+        <div align="left">
+<pre><code>x = 10
 x = "Olá"</code></pre>
+</div>
         <br>
         <br>
         Esse comportamento é chamado de <strong>tipagem dinâmica</strong>. Variáveis e tipos serão estudados com muito mais profundidade na <a href="../01%20-%20Vari%C3%A1veis%20e%20Tipos/Vari%C3%A1veis%20e%20Tipos.md">Aula 01 — Variáveis e Tipos</a>.
@@ -792,7 +922,9 @@ x = "Olá"</code></pre>
         A ideia central por trás de qualquer programa pode ser resumida assim:
         <br>
         <br>
-        <pre><code>Entrada → Processamento → Saída</code></pre>
+        <div align="left">
+<pre><code>Entrada → Processamento → Saída</code></pre>
+</div>
         <br>
         <br>
         Durante o curso, você aprenderá diversas estruturas e ferramentas para controlar o que acontece na etapa de <strong>processamento</strong> — desde decisões simples até algoritmos complexos.
