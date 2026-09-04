@@ -1,0 +1,1 @@
+# Uma pasta para guardar os códigos que não façam parte de nenhuma aula específica.
